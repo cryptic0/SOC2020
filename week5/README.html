@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Vikram Chhatre" />
+  <meta name="dcterms.date" content="2020-06-24" />
+  <title>Professional quality typesetting with LaTeX</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="avenir-white.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Professional quality typesetting with LaTeX</h1>
+<p class="author">Vikram Chhatre</p>
+<p class="date">June 24, 2020</p>
+</header>
+<h2 id="professional-quality-typesetting-with-latex">Professional Quality Typesetting with LaTeX</h2>
+<p>This week we will visit another publishing standard - <a href="https://latex-project.org">LaTeX2e</a>. You may have heard of it or not, you may have been intimidated by it or not. LaTeX is a typesetting engine which can help you write professional quality document which look like they just came from an actual typesetting press. Yes, the one that prints ink on paper using metal casts.</p>
+<p>We understand that this way of writing documents is not for everyone. We just want to give you an introduction and then you can decide for yourself if it’s worth to you.</p>
+<h2 id="how-to-prepare-for-this-session">How to prepare for this session?</h2>
+<ul>
+<li><p>Install <a href="https://tug.org/mactex/mactex-download.html">MacTex2020</a> or <a href="https://miktex.org">MiKTeX for Windows</a></p></li>
+<li><p>Install <a href="https://www.xm1math.net/texmaker/">TeXMaker</a> for your OS</p></li>
+<li><p>Get a free account on <a href="https://overleaf.com">OVERLEAF</a></p></li>
+<li><p>If this will be your first time attending SOC2020, get a free <a href="https://github.com">GitHub account</a></p></li>
+</ul>
+<h2 id="highlights-from-the-session">Highlights from the session</h2>
+<p>In this session, we learned following items:</p>
+<ul>
+<li><p>What is LaTeX and analogy to the R environment package system</p></li>
+<li><p>Structure of the main <code>.tex</code> document:</p>
+<ul>
+<li><p>Preamble where you declare document types, various necessary packages and their respective options</p></li>
+<li><p>Body of the document</p></li>
+<li><p>Math equations and symbols</p></li>
+<li><p>Inserting citations</p></li>
+<li><p>Table of contents, List of figures</p></li>
+</ul></li>
+<li><p>Structure of the bibliography document i.e. <code>.bib</code></p>
+<ul>
+<li><p>Google scholar provides BibTeX style citation entries</p></li>
+<li><p>Bibliography key and how to use it when citing a paper</p></li>
+</ul></li>
+<li><p>Compiling a <code>.tex</code> document</p>
+<ul>
+<li>Run <code>pdflatex</code> once</li>
+<li>Run <code>bibtex</code> once</li>
+<li>Run <code>pdflatex</code> 2x more</li>
+<li><strong>OR</strong></li>
+<li>Write these commands inside a simple shell script and execute it instead.</li>
+</ul></li>
+<li><p>We structured the main document <code>kimura.tex</code> and compiled it to produce the pdf <code>kimura.pdf</code>.</p></li>
+<li><p>How to upload your project to your overleaf account</p></li>
+<li><p>How to push changes to GitHub directly from your overleaf account</p></li>
+<li><p>Finally, how to use TeXMaker, the GUI client for TeX.</p></li>
+</ul>
+<h2 id="video-recordings">Video Recordings</h2>
+<p>Available in two places:</p>
+<ul>
+<li><p>Teton Computing Environment: <code>/project/inbre-train/summercode/Zoom_Videos/</code></p></li>
+<li><p><a href="https://www.dropbox.com/sh/y9qevigabrw786z/AABb8HH5N-nm_M5LfDPWjLG9a?dl=0">Dropbox folder</a></p></li>
+</ul>
+<h2 id="further-reading">Further reading</h2>
+<p>If you are curious about the development of LaTeX, here are some important people who were seminal in its develpment and some associated articles:</p>
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> and <a href="https://www.amazon.com/LaTeX-Document-Preparation-System-2nd/dp/0201529831">his book</a></p></li>
+<li><p>Donald Knuth’s profile in New York Times: <a href="https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html">The Yoda of Silicon Valley</a></p></li>
+<li><p><span style="color:blue">One of the beginner’s guide to LaTeX that has been around for over 25 years is still an extremely useful first book (free of course):</span></p>
+<ul>
+<li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf">The Not So Short Introduction to LaTeX by Oetiker, Partl, Hyna and Schlegl</a>. <strong>I highly recommend it</strong>.</li>
+</ul></li>
+</ul>
+</body>
+</html>

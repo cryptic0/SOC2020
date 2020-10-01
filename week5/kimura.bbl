@@ -1,0 +1,42 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Fincham(1968)]{fincham1968genetic}
+JRS Fincham.
+\newblock Genetic complementation.
+\newblock \emph{Science Progress (1933-)}, pages 165--177, 1968.
+
+\bibitem[Hubby and Lewontin(1966)]{hubby1966molecular}
+Jack~L Hubby and Richard~C Lewontin.
+\newblock A molecular approach to the study of genic heterozygosity in natural
+  populations. i. the number of alleles at different loci in drosophila
+  pseudoobscura.
+\newblock \emph{Genetics}, 54\penalty0 (2):\penalty0 577, 1966.
+
+\bibitem[Mayr(1965)]{mayr1965animal}
+E~Mayr.
+\newblock \emph{Animal Species and Evolution. 2nd edn. Vol. 211}.
+\newblock The Belknap Press of Harvard University Press, 1965.
+
+\bibitem[Narise and Hubby(1966)]{narise1966purification}
+Sumiko Narise and John~L Hubby.
+\newblock Purification of esterase-5 from drosophila pseudoobscura.
+\newblock \emph{Biochimica et Biophysica Acta (BBA)-Enzymology and Biological
+  Oxidation}, 122\penalty0 (2):\penalty0 281--288, 1966.
+
+\bibitem[Wright(1931)]{wright1931evolution}
+Sewall Wright.
+\newblock Evolution in mendelian populations.
+\newblock \emph{Genetics}, 16\penalty0 (2):\penalty0 97, 1931.
+
+\bibitem[Zuckerkandl et~al.(1965)Zuckerkandl, Pauling, Bryson, and
+  Vogel]{zuckerkandl1965evolving}
+Emile Zuckerkandl, Linus Pauling, V~Bryson, and HJ~Vogel.
+\newblock \emph{Evolving genes and proteins}.
+\newblock Elsevier Inc., 1965.
+
+\end{thebibliography}

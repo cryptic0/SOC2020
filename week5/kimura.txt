@@ -1,0 +1,22 @@
+EVOLUTIONARY RATE AT THE MOLECULAR LEVEL
+
+MOTOO KIMURA
+NATIONAL INSTITUTE OF GENETICS
+MISHIMA, JAPAN
+
+February 17, 1968
+
+
+Abstract: Calculating the rate of evolution in terms of nucleotide substitutions seems to give a value so high that many of the mutations involved must be neutral ones.
+
+
+Comparative studies of haemoglobin molecules among different groups of animals suggest that, during the evolutionary history of mammals, amino-acid substitution has taken place roughly at the rate of one amino-acid change in 10^7 yr for a chain consisting of some 140 amino-acids.  For example, by comparing the ALPHA and BETA chains of man with those of horse, pig, cattle and rabbit, the rigure of one amino-acid change in 7 x 10^6 yr was obtained (1). This is roughly equivalent to the rate of one amino-acid substitution in 10^7 yr for a chain consisting of 100 amino-acids.
+
+Lewontin and Hubby (15) estimated that in natural populations of Drosophila pseudoobscura an average of about 12 per cent of loci in each individual is heterozygous.  The corresponding heterozygosity with respect to nucleotide sequence should be much higher. The chemical structure of enzymes used in this study does not seem to be known at present, but in the typical case of esterase-5 the molecular weight was estimated to be about 10^5 by Narise and Hubby (16).  In higher organisms, enzymes with molecular weight of this magnitude seem to be common and usually they are "multimeters" (17). So, if we assume that each of those enzymes comprises on the average some 1,000 amino-acids (corresponding to molecular weight of some 120,000, the mutation rate for the corresponding genetic site (consisting of about 3,000 nucleotide pairs) is 
+
+mu = 3 x 10^3 x 5 x 10^-10 = 1.5 x 10^6
+
+per generation.  The entire genome could produce more than a million of such enzymes.
+
+
+
