@@ -10,9 +10,8 @@ author: Vikram Chhatre
 
 - [2. Highlights of the Session](#highlights-of-the-session)
 
-- [3. Zoom Recordings](#zoom-recordings)
+- [3. Example Run of Today's Session](mdown/README.md)
 
-- [4. Further Reading Resources](#further-reading-resources)
 
 
 <br><br>
@@ -86,20 +85,6 @@ Here is what we accomplished in today's session:
 
 
 - All the data used for today's repo was made available on Dropbox via  link posted too Zoom chat as well as the Slack channel.
-
-
-## 3. Zoom Recordings
-
-Zoom video recordings are posted at two locations:
-
-- Teton.uwyo.edu ``/project/inbre-train/summercode/``
-
-- [Dropbox Folder](https://www.dropbox.com/sh/y9qevigabrw786z/AABb8HH5N-nm_M5LfDPWjLG9a?dl=0)
-
-## 4. Further Reading Resources
-
-
-
 
 
 

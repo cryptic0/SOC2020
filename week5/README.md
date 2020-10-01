@@ -67,14 +67,6 @@ In this session, we learned following items:
 
 
 
-## Video Recordings
-
-Available in two places:
-
-- Teton Computing Environment: ``/project/inbre-train/summercode/Zoom_Videos/``
-
-- [Dropbox folder](https://www.dropbox.com/sh/y9qevigabrw786z/AABb8HH5N-nm_M5LfDPWjLG9a?dl=0)
-
 
 ## Further reading
 

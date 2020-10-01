@@ -1,4 +1,8 @@
-# May 26, 2020: Publishing with Markdown
+---
+title: SOC2020; May 26, 2020; Publishing with Markdown
+author: Vikram E. Chhatre
+---
+
 
 ## 0. Preparation
 
@@ -38,10 +42,4 @@
 - Using a Cascading Style Sheets (CSS) to enhance output html formatting.  The example we used was the stylesheet ``screen.css`` from the GitHub repository: [https://github.com/ebidel/markdown-css-themes](https://github.com/ebidel/markdown-css-themes).
 
 
-## Zoom Video Recordings
 
-- Some people requested videorecording of the session.  For now I will be making them available for download on the Teton Computing Environment.  If you have access to the server, the first video will be available after 12pm MDT on 05/27.  Please see ``/project/inbre-train/summercode/``.
-
-- If you are a CC person and do not have access to Teton, please email us at wyoinbre at gmail and we will figure out another way for you to access the files.
-
-- 

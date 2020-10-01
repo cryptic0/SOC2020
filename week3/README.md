@@ -16,11 +16,7 @@ author: Vikram Chhatre
 
 - [2. Collaborative Work Using git and GitHub](#collaborative-work-using-git-and-github)
 
-- [3. Highlights of the Session](#highlights-of-the-session)
-
-- [3. Zoom Recordings](#zoom-recordings)
-
-- [4. Further Reading Resources](#further-reading-resources)
+- [3. Further Reading Resources](#further-reading-resources)
 
 
 <br><br>
@@ -62,16 +58,8 @@ Collaborative work is where Git and GitHub come in very handy.  There are numero
 **Note**: We may post some instructions here for preparations in the next day or so.  Please make sure to revisit this repo sometime after 5pm on Friday, June 05.
 
 
-## 3. Zoom Recordings
 
-Zoom video recordings will be posted to two locations:
-
-- Teton.uwyo.edu ``/project/inbre-train/summercode/``
-
-- [Dropbox Folder](https://www.dropbox.com/sh/y9qevigabrw786z/AABb8HH5N-nm_M5LfDPWjLG9a?dl=0)
-
-
-## 4. Further Reading Resources
+## 3. Further Reading Resources
 
 
 Buffalo, Vince (2015). Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools.  O'Reilly Publishers. **ISBN**: 978-1449367374.
