@@ -13,11 +13,11 @@ Welcome to Wyoming INBRE Summer Code.  This is the official repository for the p
 
 - [Week 3 (6/11): GitKraken; Collaborative Work using git and GitHub](week3/index.html)
 
-	- [Jump Directly to Git Collaboration Exercise](week3/README2.md)
+	- [Jump Directly to Git Collaboration Exercise](week3/index2.html)
 
 - [Week 4 (6/16): Creating Your First R Package](week4/index.html)
 
-	- [Jump Directly to Tutorial/Exercise](week4/README2.md)
+	- [Jump Directly to Tutorial/Exercise](week4/README2.html)
 
 - [Week 5 (6/23): Professional Quality Typesetting with LaTeX](week5/index.html)
 

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Vikram E. Chhatre" />
+  <meta name="dcterms.date" content="2020-06-11" />
+  <title>Collaborations Using git and GitHub</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="avenir-white.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Collaborations Using git and GitHub</h1>
+<p class="author">Vikram E. Chhatre</p>
+<p class="date">June 11, 2020</p>
+</header>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><p><a href="#set-up-working-directories">0. Set Up Working Directories</a></p></li>
+<li><p><a href="#raptors-create-central-project-repository">1. Raptors Create Central Project Repository</a></p></li>
+<li><p><a href="#raptors-invite-collaborators">2. Raptors Invite Collaborators</a></p></li>
+<li><p><a href="#shrikes-clone-the-repository">3. Shrikes Clone the Repository</a></p></li>
+<li><p><a href="#shrikes-modify-the-repository-and-push-updates">4. Shrikes Modify the Repository and Push Updates</a></p></li>
+<li><p><a href="#raptors-pull-the-repository-to-sync-changes">5. Raptors Pull the Repository to Sync Changes</a></p></li>
+<li><p><a href="#raptors-modify-the-repository-and-push-updates">6. Raptors Modify the Repository and Push Updates</a></p></li>
+<li><p><a href="#shrikes-pull-the-changes">7. Shrikes Pull the Changes</a></p></li>
+</ul>
+<p><br><br><br></p>
+<h2 id="before-we-begin">Before We Begin</h2>
+<p>The following exercise is to be done in groups of 2. One person from the group will be a raptor and the other will be a shrike. The sections below are clearly labeled as to who will take the lead in that section.</p>
+<p><br><br></p>
+<h3 id="set-up-working-directories">0. Set Up Working Directories</h3>
+<p><strong>Raptors</strong>: On your computer, set up the following folders at an appropriate location:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">mkdir</span> -p ~/SOC2020/raptors</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">ls</span> -l ~/SOC2020</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span></code></pre></div>
+<p><strong>Shrikes</strong>: On your computer, set up these folders:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">mkdir</span> -p ~/SOC2020/shrikes</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">ls</span> -l ~/SOC2020</span>
+<span id="cb2-5"><a href="#cb2-5"></a></span></code></pre></div>
+<p><strong>Also remember to share your GitHub account names with each other</strong></p>
+<p><br><br></p>
+<h3 id="raptors-create-central-project-repository">1. Raptors Create Central Project Repository</h3>
+<ul>
+<li><p>Team raptors will create a repository called <code>collab</code> on GitHub. Make it <strong>private</strong>.</p></li>
+<li><p>Create a new folder named <code>collab</code> inside <code>~/SOC2020/raptors/</code></p></li>
+<li><p>Initiate the folder as a new git repository</p></li>
+<li><p>Add a <code>README.md</code> file to this repository and follow directions for putting content in there</p></li>
+<li><p>Save and close the <code>README.md</code> and stage changes to the repo</p></li>
+<li><p>Commit changes</p></li>
+<li><p>Configure git settings and add remote</p></li>
+<li><p>Push all new chanes to the existing repo on GitHub</p></li>
+</ul>
+<p><br><br></p>
+<h3 id="raptors-invite-collaborators">2. Raptors Invite Collaborators</h3>
+<p>Once your changes have been pushed to GitHub successfully, follow directions for inviting a collaborator. You should have chosen a person from the Shrikes camp to be your collaborator and should have their GitHub user name.</p>
+<p>Once a collaborator is added, that person receives a <a href="https://github.com/shrike_person/notifications">notification from GitHub</a>. After they accept the invitation, they will appear as a collaborator within the project repo.</p>
+<p><br><br></p>
+<h3 id="shrikes-clone-the-repository">3. Shrikes Clone the Repository</h3>
+<p>Now the fun begins. Shrikes will first clone this central repository in which they are a collaborator:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">cd</span> ~/SOC2020/shrikes/</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">git</span> clone https://github.com/YOUR_RAPTOR_COLLABORATOR/collab</span>
+<span id="cb3-5"><a href="#cb3-5"></a></span></code></pre></div>
+<p>Once cloned, the repository contents should be identical for both collaborators.</p>
+<p><br><br></p>
+<h3 id="shrikes-modify-the-repository-and-push-changes">4. Shrikes Modify the Repository and Push Changes</h3>
+<p>Shrikes take a look at the files within the repository and decide to make a few changes. For example, let’s imagine and implement these changes:</p>
+<ol type="1">
+<li>Set the seed so the analysis can be repeated precisely at a later date</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">set.seed</span>(<span class="dv">59</span>)</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">100</span>, <span class="dv">5</span>, <span class="dv">1</span>)</span>
+<span id="cb4-5"><a href="#cb4-5"></a></span></code></pre></div>
+<ol start="2" type="1">
+<li>Compare the output of <code>rnorm</code> to known normal distribution with the <code>qqnorm</code> function.</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">png</span>(<span class="st">&quot;rnorm100_qqnorm.png&quot;</span>, <span class="dt">units=</span><span class="st">&quot;px&quot;</span>, <span class="dt">width=</span><span class="dv">1600</span>, <span class="dt">height=</span><span class="dv">1600</span>, <span class="dt">res=</span><span class="dv">300</span>)</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">qqnorm</span>(a)</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="kw">dev.off</span>()</span>
+<span id="cb5-7"><a href="#cb5-7"></a></span></code></pre></div>
+<center>
+<p><img src="rnorm100_qqnorm.png" width=600></img></p>
+</center>
+<ol start="3" type="1">
+<li>Push changes made to the repository to the central repo</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2"></a>git status</span>
+<span id="cb6-3"><a href="#cb6-3"></a></span>
+<span id="cb6-4"><a href="#cb6-4"></a>git add .</span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a>git push origin master</span>
+<span id="cb6-7"><a href="#cb6-7"></a></span></code></pre></div>
+<ul>
+<li>Now the local copies of the repository between Raptors and Shrikes are not identical. This is why every collaborator should sync their local repos frequently from the remote so as to keep up to date. This is exactly what Raptors will do now:</li>
+</ul>
+<p><br><br></p>
+<h3 id="raptors-pull-the-repository-to-sync-changes">5. Raptors Pull the Repository to Sync Changes</h3>
+<ul>
+<li>First pull the repo</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2"></a>cd <span class="op">~</span><span class="er">/</span>SOC2020<span class="op">/</span>raptors<span class="op">/</span>collab<span class="op">/</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a>git pull origin master</span>
+<span id="cb7-5"><a href="#cb7-5"></a></span></code></pre></div>
+<ul>
+<li>Then check the changes made by Shrikes. After reading through, Raptors agree to the changes, but also think it would be nice to demonstrate the effect of sample size on conformity to the normal distribution. In the above example, the sample consisted of only 100 entries. They decide to try two more iterations.</li>
+</ul>
+<p><br><br></p>
+<h3 id="raptors-modify-the-repository-and-push-updates">6. Raptors Modify the Repository and Push Updates</h3>
+<ul>
+<li>Run two more iterations of <code>rnorm()</code></li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2"></a>r500 &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">500</span>, <span class="dv">5</span>, <span class="dv">1</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a></span>
+<span id="cb8-4"><a href="#cb8-4"></a>r2k &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">2000</span>, <span class="dv">5</span>, <span class="dv">1</span>)</span>
+<span id="cb8-5"><a href="#cb8-5"></a></span></code></pre></div>
+<ul>
+<li>And plot both together with the first plot.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="kw">png</span>(<span class="st">&quot;r500_qqnorm.png&quot;</span>, <span class="dt">units=</span><span class="st">&quot;px&quot;</span>, <span class="dt">width=</span><span class="dv">1600</span>, <span class="dt">height=</span><span class="dv">1600</span>, <span class="dt">res=</span><span class="dv">300</span>)</span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="kw">qqnorm</span>(r500)</span>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="kw">dev.off</span>()</span>
+<span id="cb9-7"><a href="#cb9-7"></a></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="kw">png</span>(<span class="st">&quot;r2k_qqnorm.png&quot;</span>, <span class="dt">units=</span><span class="st">&quot;px&quot;</span>, <span class="dt">width=</span><span class="dv">1600</span>, <span class="dt">height=</span><span class="dv">1600</span>, <span class="dt">res=</span><span class="dv">300</span>)</span>
+<span id="cb10-3"><a href="#cb10-3"></a></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="kw">qqnorm</span>(r2k)</span>
+<span id="cb10-5"><a href="#cb10-5"></a></span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="kw">dev.off</span>()</span>
+<span id="cb10-7"><a href="#cb10-7"></a></span></code></pre></div>
+<center>
+<p><img src="rnorm100_qqnorm.png" width=250></img> <img src="r500_qqnorm.png" width=250></img> <img src="r2k_qqnorm.png" width=250></img></p>
+</center>
+<ul>
+<li>Finally, commit and push all changes to the central repository</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">git</span> status</span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="fu">git</span> add .</span>
+<span id="cb11-6"><a href="#cb11-6"></a></span>
+<span id="cb11-7"><a href="#cb11-7"></a></span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="fu">git</span> commit -m <span class="st">&quot;Added two qqnorm plots&quot;</span></span>
+<span id="cb11-9"><a href="#cb11-9"></a></span>
+<span id="cb11-10"><a href="#cb11-10"></a></span>
+<span id="cb11-11"><a href="#cb11-11"></a><span class="fu">git</span> push origin master</span>
+<span id="cb11-12"><a href="#cb11-12"></a></span></code></pre></div>
+<ul>
+<li>Check the online repository.</li>
+</ul>
+<p><br><br></p>
+<h3 id="shrikes-pull-the-changes">7. Shrikes Pull the Changes</h3>
+<p>Now the ball is back in the Shrikes’ court. They just have to pull the updates to become up to date.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a></span>
+<span id="cb12-2"><a href="#cb12-2"></a>git pull origin master</span>
+<span id="cb12-3"><a href="#cb12-3"></a></span></code></pre></div>
+<p>Both local repositories are now fully in sync.</p>
+</body>
+</html>
